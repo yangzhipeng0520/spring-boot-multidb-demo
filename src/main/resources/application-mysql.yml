@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/multidb_demo?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: multidb_demo
+    password: multidb_demo_123
+
+logging:
+  level:
+    com.example.multidb.mapper: debug
+

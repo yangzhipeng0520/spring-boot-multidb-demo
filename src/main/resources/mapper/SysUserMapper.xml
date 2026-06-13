@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.multidb.mapper.SysUserMapper">
+
+    <select id="selectActiveUsers" resultType="com.example.multidb.entity.SysUser">
+        select
+            id,
+            user_name,
+            display_name,
+            email,
+            status,
+            create_time,
+            update_time
+        from sys_user
+        where status = 1
+        order by create_time desc
+    </select>
+
+    <select id="searchByKeyword" resultType="com.example.multidb.entity.SysUser">
+        select
+            id,
+            user_name,
+            display_name,
+            email,
+            status,
+            create_time,
+            update_time
+        from sys_user
+        where user_name like concat('%', #{keyword}, '%')
+           or display_name like concat('%', #{keyword}, '%')
+        order by create_time desc
+    </select>
+
+</mapper>
+

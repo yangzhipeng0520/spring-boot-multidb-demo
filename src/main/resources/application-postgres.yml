@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/multidb_demo
+    username: multidb_demo
+    password: multidb_demo_123
+
+logging:
+  level:
+    com.example.multidb.mapper: debug
+

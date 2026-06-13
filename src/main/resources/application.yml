@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spring-boot-multidb-demo
+
+server:
+  port: 8080
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/**/*.xml
+  type-aliases-package: com.example.multidb.entity
+  configuration:
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      id-type: assign_id
+
