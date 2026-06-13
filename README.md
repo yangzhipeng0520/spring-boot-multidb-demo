@@ -131,11 +131,19 @@ curl http://localhost:8080/api/configs/feature.multidb.enabled
 
 [docs/monetization.md](docs/monetization.md)
 
+付费版预览：
+
+[docs/paid-version-preview.md](docs/paid-version-preview.md)
+
+购买页文案草案：
+
+[docs/purchase-copy.md](docs/purchase-copy.md)
+
 ## 推荐文章
 
 - [Spring Boot 适配达梦数据库：从 JDBC 到 MyBatis-Plus 分页](docs/articles/spring-boot-dameng-mybatis-plus.md)
+- [MySQL 迁移达梦 DM8：Java 项目最容易踩的 15 个坑](docs/articles/mysql-to-dameng-common-pitfalls.md)
 
 ## License
 
 当前仓库用于学习、评估和技术验证。商业授权和付费版内容可在后续版本中单独定义。
-
